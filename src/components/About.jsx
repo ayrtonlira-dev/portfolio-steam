@@ -37,7 +37,9 @@ export default function About() {
         {profile.workingStyle ? (
           <div className="about-note">
             <span className="mono-label">Como eu trabalho</span>
-            <p>{profile.workingStyle}</p>
+            {profile.workingStyle.split("\n\n").map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
         ) : null}
 

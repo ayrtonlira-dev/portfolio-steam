@@ -1,20 +1,66 @@
-# Ayrton Lira — portfólio pessoal
+# Ayrton Lira · Portfólio
 
-Portfólio em React, Vite e JavaScript com a estrutura de um perfil de jogador:
-vitrine em pixel art, biblioteca de projetos, painel de projeto acessível e
-experiência mobile própria.
+Um pouco de Steam, um pouco de Recife e os projetos que venho construindo.
 
-**Status:** aplicação implementada localmente. Publicação em domínio próprio
-ainda não configurada.
+![Ilustração da estação de trabalho presente no portfólio](src/assets/images/art/room-night.png)
 
-## Como rodar
+## De onde veio a ideia
+
+Jogos fazem parte da minha vida, então fazia sentido trazer isso para o meu portfólio. A referência foi o perfil da Steam: a foto, a vitrine, a biblioteca e aquela sensação de estar visitando um espaço que pertence a alguém.
+
+Quis reinterpretar essa estrutura com a minha identidade. A biblioteca virou uma lista de projetos; cada um abre uma ficha com imagens, tecnologias, contexto e minha participação. As cores, a cidade ao fundo e as interações foram sendo ajustadas até o conjunto fazer sentido para mim.
+
+Também queria que quem chegasse procurando um desenvolvedor encontrasse o essencial sem precisar conhecer a referência: o que estou estudando, em quais projetos trabalho e como entrar em contato.
+
+## O que você encontra aqui
+
+- **Projetos com contexto:** capturas, estágio de desenvolvimento e divisão de responsabilidades.
+- **Galerias navegáveis:** imagens ampliáveis e navegação por teclado.
+- **Links para cada projeto:** a seleção fica na URL, como `?projeto=gamerboxx`, e acompanha o histórico do navegador.
+- **Uma cidade com chuva pixelada:** gotas desenhadas em canvas nas laterais do perfil, com tamanhos e velocidades diferentes.
+- **Controle de movimento:** preferência salva no navegador. A chuva externa respeita movimento reduzido e pausa quando a aba fica oculta.
+- **Layout responsivo:** a organização se adapta ao celular, com navegação textual e acesso direto ao currículo e contato.
+
+## Os projetos
+
+### GAMERBOXX
+
+Um produto desenvolvido em colaboração, voltado a registrar, avaliar e organizar jogos.
+
+Atuo nas interfaces em React e na integração com os endpoints existentes. O projeto conta com a colaboração de um engenheiro de software sênior, responsável pelo backend e pela orientação técnica. Ainda não está em produção.
+
+### Studio Car Recife
+
+Identifiquei a necessidade de um site institucional, defini o conteúdo com o cliente e conduzi a entrega, incluindo domínio, Cloudflare e publicação. O site reúne informações sobre os serviços, avaliações do Google, mapa e contato.
+
+O layout e o código foram gerados com o Codex.
+
+[Visitar o Studio Car Recife](https://studiocarrecife.com.br/)
+
+### Este portfólio
+
+Também faz parte da biblioteca. É onde reúno minhas escolhas de direção visual, conteúdo e interação, com implementação assistida por IA e revisão do resultado no navegador.
+
+O projeto passou por várias versões. Algumas decisões vieram justamente de usar a página: reduzir o espaço da ilustração para destacar os projetos, melhorar a leitura, alinhar as colunas e tornar o controle das animações mais visível.
+
+## Como foi desenvolvido
+
+Usei IA durante a exploração de alternativas, implementação e revisão. Minha participação inclui definir a proposta, questionar os resultados, revisar o conteúdo e validar a experiência. A divisão de responsabilidades também aparece nas fichas dos projetos.
+
+A aplicação usa **React, JavaScript, Vite e CSS**. A chuva externa é renderizada com **Canvas 2D**, sem atualizar o estado do React a cada quadro. Os textos e dados ficam versionados no próprio projeto; este portfólio não precisa de backend ou banco de dados para funcionar.
+
+## Rodando localmente
+
+Com Node.js e npm instalados:
 
 ```bash
-npm install
+git clone https://github.com/ayrtonlira-dev/portfolio-steam.git
+cd portfolio-steam
+npm ci
 npm run dev
 ```
 
-O Vite mostra a URL local ao iniciar, normalmente `http://127.0.0.1:5173/`.
+Abra o endereço informado pelo Vite no terminal.
 
 Para gerar e conferir a versão de produção:
 
@@ -23,96 +69,27 @@ npm run build
 npm run preview
 ```
 
-O build vai para `dist/`. O `base` está definido como relativo em
-`vite.config.js`, então a aplicação pode ser publicada na raiz ou em uma
-subpasta de um host estático.
+Os arquivos de produção ficam em `dist/`. O comando de preview serve essa versão localmente; ele não publica o site.
 
-## O que está implementado
-
-- Cabeçalho de perfil com foto, apresentação, papel profissional, currículo e
-  contato.
-- Vitrine em pixel art com controle de movimento.
-- Biblioteca com os três projetos reais, status e tecnologias.
-- Painel de projeto com contexto, atuação, contribuição de outras pessoas,
-  galeria navegável e ampliação de imagens.
-- Navegação com indicação da seção atual.
-- Contexto das tecnologias por hover, foco ou toque.
-- Layout responsivo em uma coluna no mobile, com navegação compacta fixa.
-- Foco visível, gerenciamento de foco nos diálogos, fechamento por `Esc` e por
-  clique no fundo, bloqueio de rolagem do fundo.
-- Suporte a `prefers-reduced-motion` e preferência de efeitos persistida.
-
-## Conteúdo
-
-Todo o texto e os dados dos projetos ficam em [`src/content.js`](src/content.js).
-É o lugar para atualizar:
-
-- apresentação, links, currículo e foto;
-- textos e status dos projetos;
-- tecnologias e onde foram usadas;
-- atividades recentes;
-- o texto opcional **Como eu trabalho**.
-
-As imagens ficam em `src/assets/images/`. O currículo atual é o PDF que estava no
-perfil publicado anteriormente.
-
-A foto atual foi aprovada e mantida. A formação na UNINASSAU e o texto de
-apresentação profissional também já estão no conteúdo.
-
-### Pendências de conteúdo
-
-1. **Atividade recente:** `recentActivity` está vazio. O bloco só aparece com
-   atualizações reais.
-2. **Publicação desta versão:** o projeto está como **Implementado** e ainda não
-   tem link público. Atualize `status` e `links` depois do deploy.
-3. **Currículo:** substitua o PDF se houver uma versão mais nova.
-
-O GAMERBOXX segue o briefing atual: interfaces em React, integração com a API e
-contribuição em um endpoint do backend, com apoio do Codex. A estrutura principal
-do backend e a orientação técnica são do amigo engenheiro de software sênior.
-Nenhum número, nível, certificação ou tempo de experiência foi inventado.
-
-## Estrutura
+## Onde cada coisa fica
 
 ```text
 src/
-  content.js           conteúdo editável
-  App.jsx              composição e estado dos diálogos
-  components/          perfil, projetos, galeria, tecnologias, contato
-  hooks/               seção ativa, preferência de movimento, diálogos
-  styles/              fontes, base, layout, componentes e diálogos
-  assets/              imagens, fontes e currículo
-public/                favicon e imagem social
-scripts/
-  qa-browser.mjs       teste de fumaça no Chrome
-design/
-  entrega/             proposta visual aprovada e imagens da etapa de design
-  mockups/             fontes estáticas e utilitário de captura das pranchas
-  art/                 gerador e saídas da pixel art
+  content.js     apresentação, projetos, tecnologias e links
+  App.jsx        composição da página e seleção de projetos
+  components/    perfil, biblioteca, galerias e chuva
+  hooks/         diálogos, navegação e preferência de movimento
+  styles/        estilos e adaptações de layout
+  assets/        imagens, fontes e currículo
+public/          favicon e imagem para compartilhamento
 ```
 
-## Teste de interface
+Para atualizar os projetos ou os textos do perfil, o ponto de partida é [`src/content.js`](src/content.js).
 
-Com uma versão de produção sendo servida em `http://127.0.0.1:4173/`:
+## Vamos conversar
 
-```bash
-npm run build
-npm run preview -- --host 127.0.0.1 --port 4173 --strictPort
-node scripts/qa-browser.mjs --url http://127.0.0.1:4173/
-```
+Sou estudante de Análise e Desenvolvimento de Sistemas na UNINASSAU, em Recife, e busco meu primeiro estágio em desenvolvimento. Hoje trabalho com interfaces e integração de APIs e tenho interesse em evoluir para fullstack.
 
-O teste cobre abertura e fechamento do painel de projeto, galeria por teclado,
-ampliação, retorno de foco, bloqueio/restauração de rolagem, troca de projeto,
-contexto de tecnologias, movimento reduzido, navegação ativa, mobile, tablet,
-320 px e ausência de rolagem horizontal.
+[LinkedIn](https://www.linkedin.com/in/ayrton-lira-658b873b9/) · [GitHub](https://github.com/ayrtonlira-dev) · [E-mail](mailto:ayrtonslira@gmail.com)
 
-![Perfil no desktop](docs/capturas/desktop.png)
-
-![Projeto aberto](docs/capturas/projeto-aberto.png)
-
-![Perfil no mobile](docs/capturas/mobile.png)
-
-## Proposta visual
-
-A direção aprovada e as pranchas de desktop, mobile, projeto aberto e direção de
-arte estão em [`design/entrega/PROPOSTA.md`](design/entrega/PROPOSTA.md).
+Feedback sobre o código, a navegação ou a apresentação dos projetos é bem-vindo.

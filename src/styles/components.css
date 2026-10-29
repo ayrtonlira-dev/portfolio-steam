@@ -487,7 +487,8 @@
   border-bottom: 1px solid var(--line-soft);
 }
 
-.about-facts dt {
+.about-facts dt,
+.about-note > .mono-label {
   color: #8fa1b1;
   font-family: var(--mono);
   font-size: 13px;
@@ -509,8 +510,8 @@
 
 .about-note {
   display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
   align-items: start;
   margin-top: 16px;
   padding-top: 14px;

@@ -40,7 +40,7 @@ export const profile = {
   locationNote:
     "Recife, Brasil. Buscando meu primeiro estágio em desenvolvimento fullstack.",
   workingStyle:
-    "No GAMERBOXX, trabalho nas interfaces e integro o front-end aos endpoints existentes, com orientação de um amigo engenheiro de software sênior, responsável pelo backend. Nosso objetivo é transformar o projeto em um produto. No Studio Car Recife, identifiquei a necessidade, defini o conteúdo com o cliente e conduzi a entrega do site, incluindo domínio, Cloudflare e publicação.",
+    "No GAMERBOXX, atuo no front-end e na integração com APIs, em um projeto desenvolvido em colaboração. O outro desenvolvedor é responsável pelo backend e oferece orientação técnica. Nosso objetivo é transformar o projeto em um produto.\n\nNo Studio Car Recife, identifiquei a necessidade, defini o conteúdo com o cliente e conduzi a entrega do site, incluindo domínio, Cloudflare e publicação.",
   contactIntro:
     "Busco meu primeiro estágio em desenvolvimento fullstack. Se quiser trocar ideia ou falar de uma vaga, me chama.",
   photo,
@@ -151,13 +151,13 @@ export const projects = [
       items: [
         "Interfaces em React para catálogo, perfil, listas e estados da conta.",
         "Integração da interface com a API.",
-        "Adaptação das interfaces aos endpoints existentes do backend, com orientação de um amigo engenheiro de software sênior.",
+        "Adaptação das interfaces aos contratos dos endpoints existentes do backend.",
         "Uso IA para explorar soluções, implementar e revisar partes do front-end. Avalio as alterações em relação aos contratos da API e valido os fluxos da aplicação com o backend local.",
       ],
     },
     otherContribution: {
-      title: "Contribuição de outra pessoa",
-      text: "Backend e orientação técnica: meu amigo, engenheiro de software sênior, é responsável pela estrutura principal do backend e me orienta no projeto.",
+      title: "Colaboração",
+      text: "Projeto desenvolvido em colaboração com um engenheiro de software sênior, responsável pelo backend e pela orientação técnica.",
     },
     implemented: [],
     links: [],
@@ -201,8 +201,8 @@ export const projects = [
       ],
     },
     otherContribution: {
-      title: "Outra contribuição",
-      text: "O layout e o código foram gerados com o Codex. Minha atuação foi conduzir a proposta, definir o conteúdo com o cliente e colocar o site no ar.",
+      title: "Implementação",
+      text: "O layout e o código foram gerados com o Codex.",
     },
     implemented: [],
     links: [
