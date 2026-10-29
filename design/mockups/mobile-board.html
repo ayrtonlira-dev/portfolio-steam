@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proposta mobile — Ayrton Lira</title>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="mobile-board.css">
+</head>
+<body class="mobile-board">
+  <main class="board">
+    <header class="board-top">
+      <div class="topline">
+        <span class="brandline"><span class="brand-mark" aria-hidden="true"></span>AYRTON LIRA <span class="slash">/</span> EXPERIÊNCIA MOBILE</span>
+        <span class="topline-note">PROPOSTA VISUAL · 2026</span>
+      </div>
+      <div class="headline-row">
+        <div>
+          <span class="eyebrow">RESPONSIVO / UMA COLUNA</span>
+          <h1>A mesma atmosfera,<br>sem virar outro site.</h1>
+        </div>
+        <p class="board-intro">O perfil deixa de ocupar o centro e passa a preencher uma coluna. A vitrine continua em destaque, os acessos laterais viram navegação fixa e a experiência de projeto abre em uma folha inteira.</p>
+      </div>
+    </header>
+
+    <section class="mobile-row" aria-label="Telas da versão mobile">
+      <figure class="phone-panel">
+        <figcaption class="phone-caption">
+          <span class="phone-number">01</span>
+          <span>
+            <strong>Entrada do perfil</strong>
+            <small>Identidade, status e vitrine</small>
+          </span>
+        </figcaption>
+        <div class="phone-shot">
+          <img src="renders/mobile-final-01.png" alt="Primeira tela do perfil mobile, com foto, nome, status de estágio, apresentação, botões, navegação e a vitrine em pixel art.">
+        </div>
+      </figure>
+
+      <figure class="phone-panel">
+        <figcaption class="phone-caption">
+          <span class="phone-number">02</span>
+          <span>
+            <strong>Projetos e informações</strong>
+            <small>Navegação fixa e biblioteca</small>
+          </span>
+        </figcaption>
+        <div class="phone-shot">
+          <img src="renders/mobile-final-02.png" alt="Segunda tela do perfil mobile, com a navegação fixa, a biblioteca de projetos e a seção sobre.">
+        </div>
+      </figure>
+
+      <figure class="phone-panel">
+        <figcaption class="phone-caption">
+          <span class="phone-number">03</span>
+          <span>
+            <strong>Fim do perfil</strong>
+            <small>Tecnologias, contato e efeitos</small>
+          </span>
+        </figcaption>
+        <div class="phone-shot">
+          <img src="renders/mobile-final-03.png" alt="Terceira tela do perfil mobile, com tecnologias, contato, currículo e o controle de movimento.">
+        </div>
+      </figure>
+
+      <aside class="mobile-notes" aria-label="Decisões da versão mobile">
+        <span class="notes-eyebrow">DECISÕES MOBILE</span>
+        <ul>
+          <li><span>01</span><p>Nada de encolher o desktop: a identidade, a vitrine e a biblioteca são reorganizadas em uma coluna de verdade.</p></li>
+          <li><span>02</span><p>A navegação lateral vira uma faixa fixa com a seção atual, sempre ao alcance do polegar.</p></li>
+          <li><span>03</span><p>A vitrine usa um recorte próprio para manter React, código e o adesivo JS visíveis, com opção de ampliar.</p></li>
+          <li><span>04</span><p>Alvos de toque com pelo menos 44 px, foco visível e nenhuma dependência de hover.</p></li>
+          <li><span>05</span><p>O projeto aberto vira uma folha inteira: galeria no topo, ficha rolável e fechar sempre visível.</p></li>
+        </ul>
+        <div class="notes-callout">
+          <span class="callout-label">TEXTO E CONTRASTE</span>
+          <p>Corpo em 16 px; metadados não descem de 13 px. Contraste reforçado sobre os painéis, inclusive nos estados secundários.</p>
+        </div>
+        <div class="notes-callout">
+          <span class="callout-label">MOVIMENTO</span>
+          <p>Chuva, cursor e luzes só dentro da arte. O controle de efeitos fica no rodapé e respeita <em>prefers-reduced-motion</em>.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="board-footer">
+      <span>CAPTURAS EM 390 × 844 PX · VITRINE CENTRAL E CONTEÚDO REAL DO PERFIL</span>
+      <span>AYRTON LIRA · RECIFE, BRASIL</span>
+    </footer>
+  </main>
+</body>
+</html>

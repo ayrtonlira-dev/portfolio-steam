@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto aberto — GAMERBOXX</title>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body class="project-page">
+  <div class="page-underlay" aria-hidden="true">
+    <img src="renders/desktop-final.png" alt="">
+  </div>
+  <div class="page-scrim" aria-hidden="true"></div>
+
+  <section class="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-title">
+    <header class="dialog-bar">
+      <div class="dialog-id">
+        <span class="mini-mark" aria-hidden="true"></span>
+        <span class="dialog-brand">Ayrton Lira</span>
+        <span class="slash" aria-hidden="true">/</span>
+        <span class="dialog-context">Projetos</span>
+        <span class="slash" aria-hidden="true">/</span>
+        <strong>GAMERBOXX</strong>
+      </div>
+      <div class="dialog-actions">
+        <span class="dialog-status"><span class="status-dot"></span>Em desenvolvimento</span>
+        <button class="dialog-close" type="button" aria-label="Fechar detalhes do projeto">
+          <span>Fechar</span>
+          <kbd>Esc</kbd>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="m4 4 10 10M14 4 4 14"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="dialog-grid">
+      <section class="gallery" aria-label="Galeria de capturas do GAMERBOXX">
+        <div class="gallery-head">
+          <div class="gallery-label">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="3.5" width="13" height="11" rx="1"/><path d="m3 4 6 5 6-5"/></svg>
+            <span>Galeria</span>
+          </div>
+          <div class="gallery-position"><span>01</span> / 03</div>
+        </div>
+
+        <figure class="gallery-stage">
+          <img class="gallery-image" src="../assets/gamerboxx-catalogo.png" alt="Catálogo de jogos do GAMERBOXX com capas e informações de cada jogo.">
+          <button class="gallery-arrow gallery-arrow--prev" type="button" aria-label="Captura anterior">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="m11 4-5 5 5 5"/></svg>
+          </button>
+          <button class="gallery-arrow gallery-arrow--next" type="button" aria-label="Próxima captura">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="m7 4 5 5-5 5"/></svg>
+          </button>
+          <button class="gallery-zoom" type="button" aria-label="Ampliar captura atual">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M7 3H3v4M11 15h4v-4M3 3l5 5m7 7-5-5"/></svg>
+          </button>
+        </figure>
+
+        <div class="gallery-caption">
+          <div>
+            <strong>Catálogo de jogos</strong>
+            <span>Exploração do catálogo conectado ao backend.</span>
+          </div>
+          <span class="keyboard-hint">Use ← → para navegar</span>
+        </div>
+
+        <div class="gallery-thumbs" role="group" aria-label="Escolher captura">
+          <button class="gallery-thumb is-active" type="button" aria-label="Ver catálogo de jogos" aria-current="true">
+            <img src="../assets/gamerboxx-catalogo.png" alt="">
+            <span>Catálogo</span>
+          </button>
+          <button class="gallery-thumb" type="button" aria-label="Ver detalhes de um jogo">
+            <img src="../assets/gamerboxx-detalhes.png" alt="">
+            <span>Detalhes</span>
+          </button>
+          <button class="gallery-thumb" type="button" aria-label="Ver listas de jogos">
+            <img src="../assets/gamerboxx-listas.png" alt="">
+            <span>Listas</span>
+          </button>
+        </div>
+      </section>
+
+      <article class="project-info">
+        <div class="info-scroll">
+          <div class="info-kicker">
+            <span>Projeto 01</span>
+            <span class="kicker-line" aria-hidden="true"></span>
+            <span>Desenvolvimento web</span>
+          </div>
+
+          <h1 class="project-title" id="project-title">GAMERBOXX</h1>
+          <p class="project-tagline">Construindo um produto para quem joga.</p>
+          <p class="project-summary">Plataforma para registrar, avaliar e organizar jogos, criada em colaboração. Ainda está em desenvolvimento e não foi publicada em produção.</p>
+
+          <ul class="project-tech" aria-label="Tecnologias usadas no front-end">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>APIs REST</li>
+          </ul>
+
+          <section class="contribution-block" aria-labelledby="my-role-title">
+            <h2 id="my-role-title"><span class="block-marker block-marker--cyan" aria-hidden="true"></span>Minha atuação</h2>
+            <ul class="role-list">
+              <li>Interfaces em React para catálogo, perfil, listas e estados da conta.</li>
+              <li>Integração da interface com endpoints existentes.</li>
+              <li>Apoio do Codex no fluxo de desenvolvimento.</li>
+            </ul>
+          </section>
+
+          <section class="other-contribution" aria-labelledby="other-role-title">
+            <h2 id="other-role-title"><span class="block-marker block-marker--violet" aria-hidden="true"></span>Contribuição de outra pessoa</h2>
+            <p><strong>Backend e orientação técnica:</strong> meu amigo, engenheiro de software sênior, é responsável pelo backend e me orienta no projeto.</p>
+          </section>
+
+          <div class="info-divider" aria-hidden="true"></div>
+
+          <div class="project-links">
+            <span class="unavailable-link">
+              <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="4" y="8" width="10" height="7" rx="1"/><path d="M6.5 8V6.5a2.5 2.5 0 0 1 5 0V8"/></svg>
+              Sem link público nesta fase
+            </span>
+            <a href="mailto:ayrtonslira@gmail.com?subject=GAMERBOXX">Conversar sobre o projeto <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M6 4h8v8"/></svg></a>
+          </div>
+        </div>
+
+        <footer class="project-footer">
+          <span class="footer-note">A próxima entrada abre o Studio Car Recife.</span>
+          <button class="next-project" type="button">
+            <span>
+              <small>Próximo projeto</small>
+              Studio Car Recife
+            </span>
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h11m-4-4 4 4-4 4"/></svg>
+          </button>
+        </footer>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

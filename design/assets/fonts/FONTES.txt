@@ -1,0 +1,5 @@
+Inter e JetBrains Mono são distribuídas sob a SIL Open Font License.
+Arquivos obtidos via Google Fonts para uso nas pranchas da proposta.
+
+- Inter: https://fonts.google.com/specimen/Inter
+- JetBrains Mono: https://fonts.google.com/specimen/JetBrains+Mono

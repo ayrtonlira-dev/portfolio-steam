@@ -1,0 +1,17 @@
+/* Os arquivos do Google Fonts são instâncias variáveis. Declarar a faixa
+   completa permite que 400, 500 e 600 usem o eixo de peso corretamente. */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../assets/fonts/jetbrains-mono-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+}

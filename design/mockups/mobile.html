@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proposta mobile — Ayrton Lira</title>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body class="mobile-page">
+  <div class="mobile-backdrop" aria-hidden="true">
+    <img src="../art/out/city-dusk.png" alt="">
+    <div class="mobile-backdrop__tint"></div>
+  </div>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="mobile-shell">
+    <header class="m-header" id="perfil">
+      <div class="m-identity">
+        <div class="m-avatar-wrap">
+          <span class="m-avatar-corner m-avatar-corner--tl" aria-hidden="true"></span>
+          <span class="m-avatar-corner m-avatar-corner--br" aria-hidden="true"></span>
+          <div class="m-avatar">
+            <img src="../assets/photo.png" alt="Foto de Ayrton Lira">
+          </div>
+        </div>
+        <div class="m-id-copy">
+          <h1>Ayrton Lira</h1>
+          <p class="m-meta">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s5-4.35 5-8A5 5 0 0 0 3 6c0 3.65 5 8 5 8Z"/><circle cx="8" cy="6" r="1.8"/></svg>
+            Recife, Brasil <span aria-hidden="true">·</span> ADS
+          </p>
+          <p class="m-availability"><span class="m-live-dot" aria-hidden="true"></span>Buscando estágio</p>
+        </div>
+      </div>
+
+      <div class="m-role">
+        <span class="m-dev-glyph" aria-hidden="true">
+          <svg viewBox="0 0 18 18"><path d="m6.6 5-4 4 4 4M11.4 5l4 4-4 4"/></svg>
+        </span>
+        <span>Desenvolvedor em formação</span>
+      </div>
+
+      <p class="m-bio">Construo interfaces, integro APIs e busco uma oportunidade de estágio em desenvolvimento fullstack.</p>
+
+      <div class="m-actions">
+        <a class="m-button m-button--quiet" href="../assets/curriculo-atual.pdf" download>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0 3-3M8 10 5 7M3 13h10"/></svg>
+          Baixar currículo
+        </a>
+        <a class="m-button m-button--contact" href="mailto:ayrtonslira@gmail.com">
+          Contato
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Seções do perfil">
+      <a href="#perfil" aria-current="location">Perfil</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <main id="conteudo">
+      <section class="m-showcase" aria-labelledby="m-showcase-title">
+        <div class="m-panelbar">
+          <div class="m-panelbar-title">
+            <span class="m-pixel-mark" aria-hidden="true"></span>
+            <span class="m-label">Vitrine</span>
+            <span class="m-bar-divider" aria-hidden="true"></span>
+            <h2 id="m-showcase-title">Estação de trabalho</h2>
+          </div>
+          <button class="m-expand" type="button" aria-label="Ampliar a ilustração da estação de trabalho">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M7 3H3v4M11 15h4v-4M3 3l5 5m7 7-5-5"/></svg>
+          </button>
+        </div>
+        <figure class="m-showcase-art">
+          <img src="../art/out/room-night.png" alt="Quarto gamer em pixel art à noite: dois monitores, um com o símbolo do React e outro com uma interface de código, além de adesivo JS no computador e chuva na janela.">
+          <figcaption class="sr-only">Ilustração conceitual da estação de desenvolvimento do portfólio.</figcaption>
+        </figure>
+      </section>
+
+      <section class="m-projects" id="projetos" aria-labelledby="m-projects-title">
+        <div class="m-section-heading">
+          <span class="m-label">Biblioteca</span>
+          <h2 id="m-projects-title">Projetos</h2>
+        </div>
+
+        <ol class="m-project-list">
+          <li>
+            <button class="m-project" type="button" aria-haspopup="dialog">
+              <span class="m-project-thumb"><img src="../assets/gamerboxx-catalogo.png" alt=""></span>
+              <span class="m-project-copy">
+                <span class="m-project-title-row">
+                  <strong>GAMERBOXX</strong>
+                  <span class="m-row-arrow" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M4 14 14 4M6 4h8v8"/></svg></span>
+                </span>
+                <span class="m-project-meta"><span class="m-status-dot m-status-dot--progress" aria-hidden="true"></span>Em desenvolvimento <span aria-hidden="true">·</span> React <span aria-hidden="true">·</span> APIs</span>
+                <span class="m-project-description">Plataforma de jogos com React e integração de APIs.</span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="m-project" type="button" aria-haspopup="dialog">
+              <span class="m-project-thumb"><img src="../assets/studiocar-inicio.png" alt=""></span>
+              <span class="m-project-copy">
+                <span class="m-project-title-row">
+                  <strong>Studio Car Recife</strong>
+                  <span class="m-row-arrow" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M4 14 14 4M6 4h8v8"/></svg></span>
+                </span>
+                <span class="m-project-meta"><span class="m-status-dot m-status-dot--live" aria-hidden="true"></span>Publicado <span aria-hidden="true">·</span> HTML <span aria-hidden="true">·</span> Cloudflare</span>
+                <span class="m-project-description">Site institucional publicado para uma oficina de Recife.</span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="m-project" type="button" aria-haspopup="dialog">
+              <span class="m-project-thumb m-project-thumb--portfolio">
+                <span class="m-mini-window" aria-hidden="true">
+                  <span class="m-mini-avatar"></span>
+                  <span class="m-mini-lines"><i></i><i></i><i class="short"></i></span>
+                  <span class="m-mini-pixel"></span>
+                </span>
+              </span>
+              <span class="m-project-copy">
+                <span class="m-project-title-row">
+                  <strong>Este portfólio</strong>
+                  <span class="m-row-arrow" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M4 14 14 4M6 4h8v8"/></svg></span>
+                </span>
+                <span class="m-project-meta"><span class="m-status-dot m-status-dot--design" aria-hidden="true"></span>Em design <span aria-hidden="true">·</span> React <span aria-hidden="true">·</span> Vite</span>
+                <span class="m-project-description">Proposta visual em React e Vite; implementação a registrar.</span>
+              </span>
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="m-section m-about" id="sobre" aria-labelledby="m-about-title">
+        <div class="m-section-heading">
+          <span class="m-label">Informações</span>
+          <h2 id="m-about-title">Sobre</h2>
+        </div>
+        <p class="m-about-lead">Estudante de Análise e Desenvolvimento de Sistemas. Desenvolvo projetos com interfaces, integração de APIs e publicação na web.</p>
+        <dl class="m-facts">
+          <div>
+            <dt>Formação</dt>
+            <dd>Análise e Desenvolvimento de Sistemas <span>em andamento</span></dd>
+          </div>
+          <div>
+            <dt>Interesse profissional</dt>
+            <dd>Evoluir em desenvolvimento fullstack, com foco em interfaces e APIs.</dd>
+          </div>
+          <div>
+            <dt>Onde estou</dt>
+            <dd>Recife, Brasil. Buscando uma oportunidade de estágio em desenvolvimento.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="m-section m-tech" id="tecnologias" aria-labelledby="m-tech-title">
+        <div class="m-section-heading">
+          <span class="m-label">Ferramentas</span>
+          <h2 id="m-tech-title">Tecnologias</h2>
+        </div>
+        <ul class="m-tech-list">
+          <li><button type="button" aria-expanded="false"><span class="m-tech-icon m-tech-icon--react" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.1"/><ellipse cx="12" cy="12" rx="9.2" ry="3.7"/><ellipse cx="12" cy="12" rx="9.2" ry="3.7" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9.2" ry="3.7" transform="rotate(-60 12 12)"/></svg></span><span>React<small>GAMERBOXX e este portfólio</small></span></button></li>
+          <li><button type="button" aria-expanded="false"><span class="m-tech-icon m-tech-icon--js" aria-hidden="true">JS</span><span>JavaScript<small>Integração de APIs</small></span></button></li>
+          <li><button type="button" aria-expanded="false"><span class="m-tech-icon m-tech-icon--vite" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="m2 3 7 13 7-13-7 2Z"/><path class="icon-cut" d="m6.5 7.5 2.2 4.2L11 7.4 8.8 7Z"/></svg></span><span>Vite<small>Este portfólio</small></span></button></li>
+          <li><button type="button" aria-expanded="false"><span class="m-tech-icon m-tech-icon--web" aria-hidden="true">&lt;/&gt;</span><span>HTML &amp; CSS<small>Este portfólio</small></span></button></li>
+          <li><button type="button" aria-expanded="false"><span class="m-tech-icon m-tech-icon--api" aria-hidden="true"><svg viewBox="0 0 18 18"><circle cx="4" cy="4" r="2"/><circle cx="14" cy="9" r="2"/><circle cx="4" cy="14" r="2"/><path d="m6 4 6 4.5M6 14l6-4.5"/></svg></span><span>APIs REST<small>GAMERBOXX</small></span></button></li>
+          <li><button type="button" aria-expanded="false"><span class="m-tech-icon m-tech-icon--git" aria-hidden="true"><svg viewBox="0 0 18 18"><circle cx="5" cy="4" r="1.7"/><circle cx="5" cy="14" r="1.7"/><circle cx="13" cy="7" r="1.7"/><path d="M5 5.7v6.6M13 8.7v.5c0 2.1-2.3 2.7-4.2 2.9"/></svg></span><span>Git &amp; GitHub<small>Versionamento</small></span></button></li>
+        </ul>
+      </section>
+
+      <section class="m-contact" id="contato" aria-labelledby="m-contact-title">
+        <div class="m-contact-top">
+          <span class="m-label">Contato</span>
+          <h2 id="m-contact-title">Vamos conversar</h2>
+          <p>Estou buscando uma oportunidade de estágio em desenvolvimento fullstack. Se quiser trocar ideia ou falar de uma vaga, me chama.</p>
+        </div>
+        <div class="m-contact-links">
+          <a href="mailto:ayrtonslira@gmail.com">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="4" width="13" height="10" rx="1"/><path d="m3 4.7 6 4.7 6-4.7"/></svg>
+            <span><small>E-mail</small>ayrtonslira@gmail.com</span>
+          </a>
+          <a href="https://github.com/ayrtonlira-dev" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 1.7a7.4 7.4 0 0 0-2.3 14.4c.4.1.5-.1.5-.3v-1.2c-2 .5-2.5-.8-2.5-.8-.3-.9-.8-1.1-.8-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.9 2.2.7.1-.5.3-.9.5-1.1-1.6-.2-3.3-.8-3.3-3.6 0-.8.3-1.5.8-2-.1-.2-.3-.9.1-1.9 0 0 .6-.2 2 .8a7 7 0 0 1 3.7 0c1.4-1 2-.8 2-.8.4 1 .2 1.7.1 1.9.5.5.8 1.2.8 2 0 2.8-1.7 3.3-3.3 3.5.3.2.5.7.5 1.5v2.2c0 .2.1.4.5.3A7.4 7.4 0 0 0 9 1.7Z"/></svg>
+            <span><small>GitHub</small>github.com/ayrtonlira-dev</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ayrton-lira-658b873b9/" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="2.5" width="13" height="13" rx="1"/><path d="M5.4 7.6v5.1M5.4 5.7v.1M8.5 12.7V7.6M8.5 9.4c.3-.9 1-1.3 1.8-1.3 1.2 0 1.8.8 1.8 2.2v2.4"/></svg>
+            <span><small>LinkedIn</small>ayrton-lira</span>
+          </a>
+          <a href="../assets/curriculo-atual.pdf" download>
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2.5v8m0 0 3-3m-3 3-3-3M3 14.5h12"/></svg>
+            <span><small>Currículo</small>Baixar PDF</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="m-footer">
+        <button class="m-effects" type="button" aria-pressed="true">
+          <span>
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 11c2.4 0 2.4-4 4.8-4s2.4 4 4.8 4 2.4-4 4.4-4"/><path d="M2 15c2.4 0 2.4-4 4.8-4s2.4 4 4.8 4 2.4-4 4.4-4"/></svg>
+            Movimento suave
+          </span>
+          <span class="m-switch" aria-hidden="true"><span></span></span>
+        </button>
+        <p class="m-footer-note">Ayrton Lira · Recife, Brasil</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Active section preview for the static design board. The final React
+    // implementation will use the same idea with IntersectionObserver.
+    const links = [...document.querySelectorAll('.mobile-nav a')];
+    const sections = links.map(link => document.querySelector(link.getAttribute('href')));
+    const setActive = () => {
+      const marker = window.scrollY + 112;
+      let activeIndex = 0;
+      sections.forEach((section, index) => {
+        if (section && section.offsetTop <= marker) activeIndex = index;
+      });
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4) {
+        activeIndex = links.length - 1;
+      }
+      links.forEach((link, index) => {
+        if (index === activeIndex) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    window.addEventListener('scroll', setActive, { passive: true });
+    setActive();
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proposta visual — Ayrton Lira</title>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+  <a class="skip-link" href="#projects-title">Pular para os projetos</a>
+
+  <div class="backdrop" aria-hidden="true">
+    <img src="../art/out/city-dusk.png" alt="">
+    <div class="backdrop-tint"></div>
+    <div class="backdrop-grain"></div>
+  </div>
+
+  <main class="profile-shell">
+    <header class="identity-bar" id="perfil">
+      <div class="avatar-wrap">
+        <span class="avatar-corner avatar-corner--tl" aria-hidden="true"></span>
+        <span class="avatar-corner avatar-corner--br" aria-hidden="true"></span>
+        <div class="avatar">
+          <img src="../assets/photo.png" alt="Foto de Ayrton Lira">
+        </div>
+      </div>
+
+      <div class="identity">
+        <div class="name-row">
+          <h1>Ayrton Lira</h1>
+          <span class="handle">@ayrtonlira-dev</span>
+        </div>
+        <p class="identity-meta">
+          <span class="icon-label">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s5-4.35 5-8A5 5 0 0 0 3 6c0 3.65 5 8 5 8Z"/><circle cx="8" cy="6" r="1.8"/></svg>
+            Recife, Brasil
+          </span>
+          <span class="dot-separator" aria-hidden="true">·</span>
+          <span>Estudante de ADS</span>
+        </p>
+        <p class="bio">Construo interfaces, integro APIs e busco uma oportunidade de estágio em desenvolvimento fullstack.</p>
+      </div>
+
+      <div class="summary">
+        <div class="summary-kicker">
+          <span class="dev-glyph" aria-hidden="true">
+            <svg viewBox="0 0 18 18"><path d="m6.6 5-4 4 4 4M11.4 5l4 4-4 4"/></svg>
+          </span>
+          <span>Perfil profissional</span>
+        </div>
+        <h2 class="role">Desenvolvedor em formação</h2>
+        <p class="focus">Interfaces <span aria-hidden="true">·</span> APIs <span aria-hidden="true">·</span> fullstack</p>
+        <div class="header-actions">
+          <a class="button button--quiet" href="../assets/curriculo-atual.pdf" download>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0 3-3M8 10 5 7M3 13h10"/></svg>
+            Baixar currículo
+          </a>
+          <a class="contact-link" href="mailto:ayrtonslira@gmail.com">
+            Contato
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="profile-grid">
+      <section class="primary" aria-label="Perfil e projetos">
+        <section class="showcase" aria-labelledby="showcase-title">
+          <div class="panel-bar">
+            <div class="panel-bar__title">
+              <span class="pixel-mark" aria-hidden="true"></span>
+              <span class="mono-label">Vitrine</span>
+              <span class="bar-divider" aria-hidden="true"></span>
+              <h2 id="showcase-title">Estação de trabalho</h2>
+            </div>
+            <span class="panel-meta">PIXEL ART · AMBIENTE NOTURNO</span>
+          </div>
+          <figure class="showcase-art">
+            <img src="../art/out/room-night.png" alt="Quarto gamer em pixel art à noite: dois monitores, um com o símbolo do React e outro com uma interface de código, além de adesivo JS no computador e chuva na janela.">
+            <figcaption class="sr-only">Ilustração conceitual da estação de desenvolvimento do portfólio.</figcaption>
+          </figure>
+        </section>
+
+        <section class="projects" id="projetos" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <span class="mono-label">Biblioteca</span>
+              <h2 id="projects-title">Projetos</h2>
+            </div>
+          </div>
+
+          <ol class="project-list">
+            <li>
+              <button class="project-row" type="button" aria-haspopup="dialog">
+                <span class="project-thumb">
+                  <img src="../assets/gamerboxx-catalogo.png" alt="">
+                </span>
+                <span class="project-copy">
+                  <span class="project-heading">
+                    <strong>GAMERBOXX</strong>
+                    <span class="status status--progress"><span class="status-dot"></span>Em desenvolvimento</span>
+                  </span>
+                  <span class="project-description">Plataforma de jogos em desenvolvimento com React e integração de APIs.</span>
+                  <span class="project-tags">React <span>·</span> JavaScript <span>·</span> integração de APIs</span>
+                </span>
+                <span class="row-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 18 18"><path d="M4 14 14 4M6 4h8v8"/></svg>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="project-row" type="button" aria-haspopup="dialog">
+                <span class="project-thumb">
+                  <img src="../assets/studiocar-inicio.png" alt="">
+                </span>
+                <span class="project-copy">
+                  <span class="project-heading">
+                    <strong>Studio Car Recife</strong>
+                    <span class="status status--live"><span class="status-dot"></span>Publicado</span>
+                  </span>
+                  <span class="project-description">Site institucional publicado para uma oficina de Recife.</span>
+                  <span class="project-tags">HTML <span>·</span> CSS <span>·</span> Cloudflare</span>
+                </span>
+                <span class="row-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 18 18"><path d="M4 14 14 4M6 4h8v8"/></svg>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="project-row" type="button" aria-haspopup="dialog">
+                <span class="project-thumb project-thumb--portfolio">
+                  <span class="mini-window">
+                    <span class="mini-avatar"></span>
+                    <span class="mini-lines"><i></i><i></i><i class="short"></i></span>
+                    <span class="mini-pixel"></span>
+                  </span>
+                </span>
+                <span class="project-copy">
+                  <span class="project-heading">
+                    <strong>Este portfólio</strong>
+                    <span class="status status--design"><span class="status-dot"></span>Em design</span>
+                  </span>
+                  <span class="project-description">Proposta visual em React e Vite; implementação a registrar.</span>
+                  <span class="project-tags">React <span>·</span> Vite <span>·</span> JavaScript</span>
+                </span>
+                <span class="row-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 18 18"><path d="M4 14 14 4M6 4h8v8"/></svg>
+                </span>
+              </button>
+            </li>
+          </ol>
+        </section>
+      </section>
+
+      <aside class="sidebar" aria-label="Informações e atalhos do perfil">
+        <section class="availability">
+          <span class="mono-label">Disponibilidade</span>
+          <p class="availability-title"><span class="live-dot" aria-hidden="true"></span>Buscando estágio</p>
+          <p class="availability-text">Desenvolvimento fullstack, com foco em interfaces e integração de APIs.</p>
+        </section>
+
+        <nav class="local-nav" aria-label="Navegação do perfil">
+          <span class="mono-label">Neste perfil</span>
+          <ul>
+            <li><a href="#perfil" aria-current="location">Visão geral</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <section class="tech" id="tecnologias" aria-labelledby="tech-title">
+          <span class="mono-label" id="tech-title">Tecnologias</span>
+          <ul class="tech-list">
+            <li><button class="tech-chip" type="button" aria-describedby="tech-react-note"><span class="tech-icon tech-icon--react" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.1"/><ellipse cx="12" cy="12" rx="9.2" ry="3.7"/><ellipse cx="12" cy="12" rx="9.2" ry="3.7" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9.2" ry="3.7" transform="rotate(-60 12 12)"/></svg></span>React</button><span id="tech-react-note" class="tech-popover">Interfaces do GAMERBOXX e este portfólio.</span></li>
+            <li><button class="tech-chip" type="button" aria-describedby="tech-js-note"><span class="tech-icon tech-icon--js" aria-hidden="true">JS</span>JavaScript</button><span id="tech-js-note" class="tech-popover">Integração com endpoints no GAMERBOXX.</span></li>
+            <li><button class="tech-chip" type="button" aria-describedby="tech-vite-note"><span class="tech-icon tech-icon--vite" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="m2 3 7 13 7-13-7 2Z"/><path d="m6.5 7.5 2.2 4.2L11 7.4 8.8 7Z" class="icon-cut"/></svg></span>Vite</button><span id="tech-vite-note" class="tech-popover">Base do novo portfólio.</span></li>
+            <li><button class="tech-chip" type="button" aria-describedby="tech-web-note"><span class="tech-icon tech-icon--web" aria-hidden="true">&lt;/&gt;</span>HTML &amp; CSS</button><span id="tech-web-note" class="tech-popover">Estrutura e estilos deste portfólio.</span></li>
+            <li><button class="tech-chip" type="button" aria-describedby="tech-api-note"><span class="tech-icon tech-icon--api" aria-hidden="true"><svg viewBox="0 0 18 18"><circle cx="4" cy="4" r="2"/><circle cx="14" cy="9" r="2"/><circle cx="4" cy="14" r="2"/><path d="m6 4 6 4.5M6 14l6-4.5"/></svg></span>APIs REST</button><span id="tech-api-note" class="tech-popover">Consumo e integração de endpoints no GAMERBOXX.</span></li>
+            <li><button class="tech-chip" type="button" aria-describedby="tech-git-note"><span class="tech-icon tech-icon--git" aria-hidden="true"><svg viewBox="0 0 18 18"><circle cx="5" cy="4" r="1.7"/><circle cx="5" cy="14" r="1.7"/><circle cx="13" cy="7" r="1.7"/><path d="M5 5.7v6.6M13 8.7v.5c0 2.1-2.3 2.7-4.2 2.9"/></svg></span>Git &amp; GitHub</button><span id="tech-git-note" class="tech-popover">Versionamento e publicação do portfólio.</span></li>
+          </ul>
+        </section>
+
+        <section class="connections" id="contato" aria-labelledby="connections-title">
+          <span class="mono-label" id="connections-title">Conectar</span>
+          <div class="connection-grid">
+            <a href="https://github.com/ayrtonlira-dev" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 1.7a7.4 7.4 0 0 0-2.3 14.4c.4.1.5-.1.5-.3v-1.2c-2 .5-2.5-.8-2.5-.8-.3-.9-.8-1.1-.8-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.9 2.2.7.1-.5.3-.9.5-1.1-1.6-.2-3.3-.8-3.3-3.6 0-.8.3-1.5.8-2-.1-.2-.3-.9.1-1.9 0 0 .6-.2 2 .8a7 7 0 0 1 3.7 0c1.4-1 2-.8 2-.8.4 1 .2 1.7.1 1.9.5.5.8 1.2.8 2 0 2.8-1.7 3.3-3.3 3.5.3.2.5.7.5 1.5v2.2c0 .2.1.4.5.3A7.4 7.4 0 0 0 9 1.7Z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ayrton-lira-658b873b9/" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="2.5" width="13" height="13" rx="1"/><path d="M5.4 7.6v5.1M5.4 5.7v.1M8.5 12.7V7.6M8.5 9.4c.3-.9 1-1.3 1.8-1.3 1.2 0 1.8.8 1.8 2.2v2.4"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:ayrtonslira@gmail.com">
+              <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="4" width="13" height="10" rx="1"/><path d="m3 4.7 6 4.7 6-4.7"/></svg>
+              E-mail
+            </a>
+            <a href="../assets/curriculo-atual.pdf" download>
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2.5v8m0 0 3-3m-3 3-3-3M3 14.5h12"/></svg>
+              Currículo
+            </a>
+          </div>
+        </section>
+
+        <div class="sidebar-footer">
+          <button class="effects-toggle" type="button" aria-pressed="true">
+            <span class="effects-label">
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 11c2.4 0 2.4-4 4.8-4s2.4 4 4.8 4 2.4-4 4.4-4"/><path d="M2 15c2.4 0 2.4-4 4.8-4s2.4 4 4.8 4 2.4-4 4.4-4"/></svg>
+              Movimento suave
+            </span>
+            <span class="switch" aria-hidden="true"><span></span></span>
+          </button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div class="canvas-note" aria-hidden="true">
+    <span>DESKTOP / 1907 × 840</span>
+    <span>PROPOSTA 01</span>
+  </div>
+</body>
+</html>
